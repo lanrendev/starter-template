@@ -1,6 +1,6 @@
 # Starter
 
-A [Nuxt.js](https://github.com/nuxt/nuxt.js) starter project template without the distraction of a complicated development environment.
+A [Nuxt.js](https://github.com/nuxt/nuxt.js) starter project template without the distraction of a complicated development environment. And this is an HTTPS version. If you don't need HTTPS, please use the original one - [nuxt-community/starter-template](https://github.com/nuxt-community/starter-template).
 
 Live demo: https://starter.nuxtjs.org
 
@@ -45,4 +45,18 @@ $ npm start
 ``` bash
 # generate a static project
 $ npm run generate
+```
+
+### The First step - generate certificate
+
+``` bash
+# generate certificate
+$ cd certificate
+$ ./gen_key_csr.sh
+
+# installation
+$ npm install
+
+# start development
+$ npm run dev
 ```
